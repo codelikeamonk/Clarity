@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Clarity</title>
+  <link rel="shortcut icon" href="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/bgimage.jpg">
+
+  <link rel="stylesheet" href="/Users/jash/Desktop/Jash_College/WP/wp_project/css/homepage.css">
+
+
+
+</head>
+
+<body>
+  <script>
+    $(document).ready(function(){
+      $("img").load(function(){
+        alert("Image loaded.");
+      });
+    });
+    </script>
+  <div class="header">
+    <img id="logo" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/bgimage.jpg">
+    <span style="margin-top: 10px; font-size:xx-large; vertical-align: top; ">Clarity</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img id="callus" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/callus.png">
+    <span style="font-size:xx-large; vertical-align: top;"> 0303-0303</span> &nbsp;&nbsp;&nbsp;
+
+    <button type="submit" id="go">Go</button>
+    <input type="text" id="searchbar" placeholder="Search..">
+
+  </div>
+  <div id="menu">
+    <a href="/Users/jash/Desktop/Jash_College/WP/wp_project/html/EyeGlasses.html">EyeGlasses</a>
+    <a href="/Users/jash/Desktop/Jash_College/WP/wp_project/html/homeEyetest.html">Home EyeTest</a>
+    <a href="/Users/jash/Desktop/Jash_College/WP/wp_project/html/digitalEyetest.html">Digital EyeTest</a>
+    <a href="/Users/jash/Desktop/Jash_College/WP/wp_project/html/storeLocator.html">Store Locator</a>
+    <a href="">Sign-Up</a>
+    <a href=""> Cart </a>
+
+  </div>
+  <div>
+    <a href="/Users/jash/Desktop/Jash_College/WP/wp_project/html/EyeGlasses.html" id="slideshowHolder">
+      <img class="mySlides" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/cover_homePage1.jpeg">
+      <img class="mySlides" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/cover_homePage2.jpeg">
+      <img class="mySlides" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/cover_homePage3.jpeg">
+      <img class="mySlides" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/cover_homePage4.jpeg">
+      <img class="mySlides" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/cover_homePage5.jpeg">
+      <img class="mySlides" src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/cover_homePage6.jpeg">
+    </a>
+  </div>
+
+  <script>
+    var myIndex = 0;
+    slideshow();
+
+    function slideshow() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(slideshow, 2500); 
+    }
+  </script>
+
+
+
+  <div class="service">
+    <div>We are here to Serve.</div>
+    <div>Clarity is now delivering across India. </div>
+    <div> Buy Now</div>
+  </div>
+
+  <div id="aboutUs">
+    <div class="about-section">
+      <h1>About Us</h1>
+
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/aboutUs_nylon.jpeg" alt="Jash"
+            style="width:100%">
+          <div class="nameHolder">
+            <h2>Krish Panchal</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Founded this company at a very young age</p>
+            <p>krishp0312@gmail.com</p>
+            <p><button class="button" onclick="location.href='mailto:jainjash72@gmail.com'">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/aboutUs_nylon.jpeg" alt="Jash"
+            style="width:100%">
+          <div class="nameHolder">
+            <h2>Mark Jacob</h2>
+            <p class="title">Director</p>
+            <p>Directed this company to reach milestones</p>
+            <p>clarityinfo@gmail.com</p>
+            <p><button class="button" onclick="location.href='mailto:jainjash72@gmail.com'">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/aboutUs_warren.jpeg" alt="Jash"
+            style="width:100%">
+          <div class="nameHolder">
+            <h2>Jainam Chhadwa</h2>
+            <p class="title">Designer</p>
+            <p>Designed the website and products</p>
+            <p>jainamchhadwa12@gmail.com</p>
+            <p><button class="button" onclick="location.href='mailto:jainjash72@gmail.com'">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+</body>
+
+</html>

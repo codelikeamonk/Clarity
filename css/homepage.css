@@ -1,0 +1,192 @@
+#logo{
+    height: 50px;
+    width: 88px;
+    
+}
+#callus{
+    height: 40px;
+    width: 50px;
+    border-radius: 30%;
+    margin-bottom: 10px;
+}
+#go{
+    float: right;
+   margin-left: 0%;
+        vertical-align: top;
+        height: 50px;
+       width: 50x;        
+        background-color: white;
+        cursor: pointer;
+        border-width: 0.5px;
+        font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: lightskyblue;
+    
+}
+
+#searchbar{
+    margin-left: 10%;
+    float: right;
+    vertical-align: top;
+    height: 50px;
+    width: 400px;  
+    border-width: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  
+
+    
+}
+
+
+    
+
+
+
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    height: 40%;
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+     color: lightskyblue;
+     
+}
+#menu{
+    margin-top: 8px;
+    width: 100%;
+    background-color: rgb(5, 5, 88);
+    margin-bottom: 6%;
+    
+    
+}
+a{
+    width: 12.779%;
+    font-weight: bolder;
+    color: lightskyblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+    .mySlides {
+        display:none;
+        height: 350px;
+        width: 100%;
+        margin-left: 25px;
+        
+        
+       
+        }
+        
+    
+    
+
+
+a:hover{
+    background-color: white;
+    color:  rgb(5, 5, 88);
+  }
+  .service{
+    display: flex;
+    background-color: rgb(5, 5, 88);
+    margin-top: 6%;
+  }
+  #slideshowHolder{
+    height: 40%;
+    width: max-content;
+   
+    
+  }
+ 
+.service>div {
+
+    width: 100%;
+  margin:10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  
+  color: lightskyblue;
+
+}
+
+  body{
+      height: 100%;
+      margin-left: 1%;
+      margin-right: 3.5%;
+     
+  }
+
+  #aboutUs {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 65px;
+    box-sizing: border-box;
+  }
+  /*
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  */
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ 
+  
+  .column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    margin-left: 15px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    border: 1px solid;
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 13px;
+    text-align: center;
+    background-color:rgb(5, 5, 88);
+    color: white;
+    margin-bottom: 0%;
+  }
+  
+  .nameHolder {
+    padding: 0 16px;
+  }
+  
+  /*.nameHolder::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  */
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 8px;
+    color: white;
+    background-color: rgb(5, 5, 88);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: lightskyblue;
+  }
+
+ 

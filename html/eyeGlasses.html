@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>
+            EyeGlasses
+        </title>
+        <link rel="shortcut icon" href="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/bgimage.jpg">
+        <link rel="stylesheet" href="/Users/jash/Desktop/Jash_College/WP/wp_project/css/EyeGlasses.css">
+
+
+    </head>
+   <body>
+       <div id="wrapper">
+
+       <div id="filter">
+           <h2> FILTERS</h2>
+
+           <br>
+
+           <h3>FRAME TYPE</h3>
+           <a href="#">
+               <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/fullRim.png">
+           </a>
+           <a href="#">
+            
+               <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/halfRim.png">
+               
+           </a>
+           <a href="#">
+               <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/Rimless.png">
+           </a>
+           <br><br><br>
+
+           <button class="dropdown-btn"> BRANDS*</button>
+          <div class="dropdown-container">
+
+            <input type="checkbox" id="tommy" name="tommy" value="tommy">
+            <label for="tommy">Tommy Hilfiger</label><br>
+            <input type="checkbox" id="rayban" name="rayban" value="rayban">
+            <label for="rayban"> Rayban </label><br>
+            <input type="checkbox" id="prada" name="prada" value="prada">
+            <label for="prada"> Prada </label><br>
+            <input type="checkbox" id="kateSpade" name="kateSpade" value="kateSpade">
+            <label for="kateSpade"> Kate Spade </label><br>
+            <input type="checkbox" id="oakley" name="oakley" value="oakley">
+            <label for="oakley"> Oakley </label><br>
+            
+            
+          </div>
+
+       
+       <button class="dropdown-btn"> COLORS*</button>
+          <div class="dropdown-container">
+
+            <input type="checkbox" id="blue" name="blue" value="blue">
+            <label for="blue">Blue</label><br>
+            <input type="checkbox" id="black" name="black" value="black">
+            <label for="black"> Black </label><br>
+            <input type="checkbox" id="pink" name="pink" value="pink">
+            <label for="pink"> Pink </label><br>
+           </div>
+           <br><br>
+           <button id="filter_button" onclick="location.href='/Users/jash/Desktop/Jash_College/WP/wp_project/html/demo_product.html';"> APPLY FILTERS</button>
+        </div>
+       <script>
+
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+        <div id="product">
+
+       <div class="gallery">
+        
+            <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/bluCut_computerGlass1.png">
+       
+        <div class="desc" style="margin-bottom: 2px;"> <br>Blu Cut TR <br> $1.99</div>
+        <button id="button_cart" onclick="cart()"> Add to Cart</button>
+      </div>
+      
+      <div class="gallery">
+        
+            <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/halfRim_glass.png">
+        
+        <div class="desc"> Half Rim <br> $1.99</div>
+        <button id="button_cart" onclick="cart()"> Add to Cart</button>
+      </div>
+      
+      <div class="gallery">
+        
+            <img src="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/bluCut_computerGlass2.png">
+    
+       <div class="desc" style="margin-top: 13px;">Blu Cut OLED Glass<br> <del>$3.99</del> &nbsp; <span style="color: crimson;"><b>$1.99</b></span></div>
+        <button id="button_cart" onclick="cart()">  Add to Cart</button>
+        <script>
+            function cart() {
+              alert("Successfully Added to your Cart! Enjoy Shopping at Clarity");
+            }
+            </script>
+      </div>
+    </div>
+
+    </div>
+   </body>
+</html>

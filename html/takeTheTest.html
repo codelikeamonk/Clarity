@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet"  href="/Users/jash/Desktop/Jash_College/WP/wp_project/css/takeTheTest.css">
+
+<head>
+<title>Digi EyeTest</title>
+<link rel="shortcut icon" href="/Users/jash/Desktop/Jash_College/WP/wp_project/photos/bgimage.jpg">
+</head>
+
+<body>
+    <h2>DigiEye Test</h2>
+    <form name="digiEyeTest" method="POST">
+        <h1>How long can you work on your digital device without any discomfort?
+        </h1>
+        <input type="radio" id="one" name="answerforOne" value="one">
+        <label for="one" class="container">One Hour</label><br>
+        <input type="radio" id="two" name="answerforOne" value="two">
+        <label for="two" class="container">Two Hours</label><br>
+        <input type="radio" id="three" name="answerforOne" value="three">
+        <label for="one" class="container">Three Hours</label><br>
+        <input type="radio" id="lessThanOne" name="answerforOne" value="lessThanOne">
+        <label for="lessThanOne" class="container">Less Than One Hour</label><br>
+        <input type="radio" id="moreThanThree" name="answerforOne" value="moreThanThree" required> 
+        <label for="moreThanThree">More Than Three Hours</label><br>
+
+       <h1> Do you have headaches when reading and doing work on digital devices?</h1>
+       <input type="radio" id="yes1" name="answerforTwo" value="yes">
+        <label for="yes1" class="container">Yes</label><br>
+        <input type="radio" id="no" name="answerforTwo" value="no" required>
+        <label for="no1" class="container">No</label><br>
+
+        <h1>Do your eyes ache while using digital device?</h1>
+        <input type="radio" id="yes2" name="answerforThree" value="yes">
+        <label for="yes2" class="container">Yes</label><br>
+        <input type="radio" id="no2" name="answerforThree" value="no" required>
+        <label for="no2" class="container">No</label><br>
+
+        <h1>Does the reading material become blurry when you work on digital devices?</h1>
+        <input type="radio" id="yes3" name="answerforFour" value="yes">
+        <label for="yes3" class="container">Yes</label><br>
+        <input type="radio" id="no3" name="answerforFour" value="no" required>
+        <label for="no3" class="container">No</label><br>
+
+        <h1>Do you have Double vision while reading or doing work on digital devices?</h1>
+        <input type="radio" id="yes4" name="answerforFive" value="yes">
+        <label for="yes4" class="container">Yes</label><br>
+        <input type="radio" id="no4" name="answerforFive" value="no" required>
+        <label for="no4" class="container">No</label><br>
+
+        <h1>Do you feel eyestrain while you use digital device?</h1>
+        <input type="radio" id="yes5" name="answerforSix" value="yes" >
+        <label for="yes5" class="container">Yes</label><br>
+        <input type="radio" id="no5" name="answerforSix" value="no" required>
+        <label for="no5" class="container">No</label><br>
+        
+        <h1>
+            Do your eyes burn while you work on digital devices?
+        </h1>
+        <input type="radio" id="yes6" name="answerforSeven" value="yes">
+        <label for="yes6" class="container">Yes</label><br>
+        <input type="radio" id="no6" name="answerforSeven" value="no" required>
+        <label for="no6" class="container">No</label><br>
+
+        <input type="submit" id="submit_button" onclick="fun()" value="RESET">
+        <input type="submit" id="submit_button" onclick="call()" value="SUBMIT">
+    </form>
+    <script>
+        function fun(){
+          document.getElementById("myForm").reset();
+        } 
+       </script>
+    <script>
+        function call(){
+        var i = prompt("Enter Your Phone Number:");
+        alert("Results will be sent via sms.");
+            }
+    </script>
+</body>
+
+</html>
